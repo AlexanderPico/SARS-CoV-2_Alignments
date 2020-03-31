@@ -17,10 +17,29 @@ object {pointer-events: none;}#facebox { position: absolute;  top: 0;   left: 0;
 #facebox img { border: 0;  margin: 0; }
 #facebox_overlay { position: fixed; top: 0px; left: 0px; height:100%; width:100%; }
 .facebox_hide { z-index:-100; }
-.facebox_overlayBG { background-color: #000;  z-index: 99;  }</style>
+.facebox_overlayBG { background-color: #000;  z-index: 99;  }
+body{font-size:18; font-family: arial;}
+</style>
+
+<h1>SARS-CoV-2 Alignments and Homology Models</h1>
+<p>While curating pathway models for the various functions of SARS-CoV-2 proteins, 
+I often stumbled upon previously <a href="https://gladstone-bioinformatics.shinyapps.io/shiny-covidpathways/" target="_blank">published pathway figures</a> 
+and <a href="http://www.rcsb.org/pdb/results/results.do?tabtoshow=Current&qrid=A4D8F222" target="_blank">solved protein structures</a> 
+relating to the prior rounds of coronavirus research. The obvious question in these cases is 
+"how similar are the sequences; are the critical residues conserved?" In the <i>open science</i> spirit of the times, I'm sharing these 
+<a href="https://github.com/AlexanderPico/SARS-CoV-2_Alignments">protein sequence alignments</a> along with 
+my observations on particularly interesting similarities and, by extension, structural and functional predictions.</p>
+
+Jump to alignments below:
+<ul>
+<li><a href="#Nsp3_PLpro_domain">Nsp3 (PLpro domain)</a></li>
+<li><a href="#Nsp16_OMT">Nsp16 (OMT)</a></li>
+<li><a href="#Orf3a">Orf3a</a></li>
+</ul>
 
 <div class="main-container" >
 <hr>
+<a name="Nsp3_PLpro_domain"></a>
 <h2>Nsp3 (PLpro domain)</h2>
 <p> SARS-CoV-2 has 82.6% sequence identity with SARS-CoV over the 316 amino acid PLpro domain, which was 
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2571001/" target="_blank">co-crystalized with its inhibitor GRL0617</a> 
@@ -49,6 +68,7 @@ The Papain-Like Protease (PLpro) can inhibit multiple steps of the
 
 <div class="main-container" >
 <hr>
+<a name="Nsp16_OMT"></a>
 <h2>Nsp16 (OMT)</h2>
 <p>SARS-CoV-2 nsp16 encodes a 2'-O-ribose methyltransferase (OMT) that modifies the 5'-end of its viral RNAs to mimic eukaryotic mRNAs, which is important for RNA stability, 
 protein translation and evading viral immune response. In SARS-CoV, nsp16 was shown to require nsp10 in order to bind m7GpppA-RNA and the 
@@ -77,6 +97,7 @@ And the motif for methyl-transfer is 100% conserved (K46,D130 K170,E203)</p>
 
 <div class="main-container" >
 <hr>
+<a name="Orf3a"></a>
 <h2>Orf3a</h2>
 <p>SARS-CoV-2 has 72.7% sequence identity with SARS-CoV over the 275 amino acides of Orf3a, which was 
 <a href="https://www.fasebj.org/doi/pdf/10.1096/fj.201802418R" target="_blank">shown to bind to TRAF3 and 
