@@ -25,7 +25,7 @@ object {pointer-events: none;}#facebox { position: absolute;  top: 0;   left: 0;
 <p> SARS-CoV-2 has 82.6% sequence identity with SARS-CoV over the 316 amino acid PLpro domain, which was 
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2571001/" target="_blank">co-crystalized with its inhibitor GRL0617</a> 
 . <b><i>Note: 100% identity over the 13 residues that participate in binding GRL0617: </i></b>
-L163, G164, D165, E168, P248, P249, Y265, G267-G272 (loop), Y269, Q270, Y274, T302.
+L163,G164,D165,E168,P248,P249,Y265,G267-G272(loop),Y269,Q270,Y274,T302.
 The Papain-Like Protease (PLpro) can inhibit multiple steps of the 
 <a href="https://www.wikipathways.org/index.php/Pathway:WP4868" target="_blank">induction of type I interferon signaling pathway</a>. </p>
 <div class="titlex">
@@ -53,7 +53,10 @@ The Papain-Like Protease (PLpro) can inhibit multiple steps of the
 <p>SARS-CoV-2 nsp16 encodes a 2'-O-ribose methyltransferase (OMT) that modifies the 5'-end of its viral RNAs to mimic eukaryotic mRNAs, which is important for RNA stability, 
 protein translation and evading viral immune response. In SARS-CoV, nsp16 was shown to require nsp10 in order to bind m7GpppA-RNA and the 
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3192843/" target="_blank">protein structure of the complex has been solved</a>. 
-SARS-CoV-2 nsp16 has 93.3% sequence identity over 298 amino acids of this solved structure.</p>
+SARS-CoV-2 nsp16 has 93.3% sequence identity over 298 amino acids of this solved structure. The residues for binding nsp10 are 100% conserved 
+(I40,T48,A83,V84,R86,Q87,D102,S105,D106,L244,M247). Those for SAM binding are 100% conserved
+(N43,Y47,G71,A72,G73,G81,D99,L100,N101,D114,C115,D130,M131,Y132,F149). 
+And the motif for methyl-transfer is 100% conserved (K46,D130 K170,E203)</p>
 <div class="titlex">
 <div class="sub-category-container"> 
 <?xml version="1.0"?>
@@ -75,14 +78,17 @@ SARS-CoV-2 nsp16 has 93.3% sequence identity over 298 amino acids of this solved
 <div class="main-container" >
 <hr>
 <h2>Orf3a</h2>
-<p>SARS-CoV-2 has 72.7% sequence identity with SARS-CoV over the 275 amino acides of Orf3a, which was shown to bind to TRAF3 and induce the NLRP3 inflammasome, contributing to the cytokine storm.</p>
+<p>SARS-CoV-2 has 72.7% sequence identity with SARS-CoV over the 275 amino acides of Orf3a, which was 
+<a href="https://www.fasebj.org/doi/pdf/10.1096/fj.201802418R" target="_blank">shown to bind to TRAF3 and 
+induce the NLRP3 inflammasome</a>, contributing to the cytokine storm. TRAF3 binding is mediated by the PxQxS 
+motif starting at residue 36 and is 100% conserved in SARS-CoV-2.</p>
 <div class="titlex">
 <div class="sub-category-container"> 
 <?xml version="1.0"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:jfreesvg="http://www.jfree.org/jfreesvg/svg" width="3504" height="71" text-rendering="auto" shape-rendering="auto">
 <defs></defs>
-<rect x="0" y="0" width="3504" height="71" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,0)" /><rect x="0" y="0" width="204" height="17" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,20)" /><g transform="matrix(1,0,0,1,0,20)"><text x="0" y="14" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 14px; font-style: italic; font-weight: bold; " >SARS-CoV-2_orf3a/1-275</text></g><rect x="0" y="17" width="204" height="17" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,20)" /><g transform="matrix(1,0,0,1,0,20)"><text x="0" y="31" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 14px; font-style: italic; " >SARS-CoV_orf3a/1-274</text></g></svg>
+<rect x="0" y="0" width="3504" height="71" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,0)" /><rect x="0" y="0" width="204" height="17" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,20)" /><g transform="matrix(1,0,0,1,0,20)"><a href="https://www.ncbi.nlm.nih.gov/protein/YP_009724391.1" target="_blank"><text x="0" y="14" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 14px; font-style: italic; font-weight: bold; " >SARS-CoV-2_orf3a/1-275</text></a></g><rect x="0" y="17" width="204" height="17" style="fill: rgb(255,255,255); fill-opacity: 1.0" transform="matrix(1,0,0,1,0,20)" /><g transform="matrix(1,0,0,1,0,20)"><a href="https://www.ncbi.nlm.nih.gov/protein/ABA02268.1" target="_blank"><text x="0" y="31" style="fill: rgb(0,0,0); fill-opacity: 1.0; font-family: sans-serif; font-size: 14px; font-style: italic; " >SARS-CoV_orf3a/1-274</text></a></g></svg>
 </div></div>
 
 <!-- ========================================================================================== -->
